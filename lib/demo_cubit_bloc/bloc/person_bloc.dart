@@ -5,9 +5,9 @@ PersonState initialState =
     PersonState(fullName: "nguyen van A", position: "tech", age: 0);
 
 class PersonBloc extends Cubit<PersonState> {
-  // PersonBloc(super.initialState);
+  // PersonBloc(super.initialState);    // Cách viết 1 
   PersonBloc()
-      : super(PersonState(fullName: "nguyen van A", position: "Tech", age: 0));
+      : super(PersonState(fullName: "nguyen van A", position: "Tech", age: 0));   // Cách viết 2
 
   //Các hàm được định nghĩa sẵn để thay đổi state
   void changeFullName(params) {

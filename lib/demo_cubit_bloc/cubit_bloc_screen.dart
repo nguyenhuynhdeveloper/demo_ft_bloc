@@ -77,6 +77,7 @@ class _CubitBlocScreenState extends State<CubitBlocScreen> {
                   print("State đã được thay đổi tuổi đã là 20");
 
                   //Có thể gọi hàm thay đổi state ở ngay đây
+                  //BlocListener chỉ làm thao tác sử lý dữ liệu chứ không có hàm build để xử lý giao diện 
                   context.read<PersonBloc>().emit(state.copyWith(age: 30));
                 },
                 child: Text(' Số tuổi của bạn '),
