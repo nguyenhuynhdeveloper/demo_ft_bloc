@@ -323,7 +323,7 @@ BlocListener<BlocA, BlocAState>(
 Để kiểm soát listener khi nào state thay đổi như thế nào mới được chạy lại thì dùng listenWhen 
 listenWhen lấy state bloc trước đó và state bloc hiện tại và trả về một boolean.
 Nếu listenWhen trả về true, thì listener sẽ được gọi với state.
- Nếu listenWhen trả về false, thì listener sẽ không được gọi với state.
+Nếu listenWhen trả về false, thì listener sẽ không được gọi với state.
 
 
  BlocListener<BlocA, BlocAState>(
@@ -334,7 +334,7 @@ Nếu listenWhen trả về true, thì listener sẽ được gọi với state.
   listener: (context, state) {
     // do stuff here based on BlocA's state
   },
-  child: Container(),
+  child: Container(),   // BlocListener có tham số child để có thể vẽ View trong đó 
 )
  */
 
